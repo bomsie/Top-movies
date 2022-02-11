@@ -1,45 +1,11 @@
-<div align="center">
-  
-# Vite React App Template
+# Vue 3 + Typescript + Vite
 
-Another skeleton of React App using Tailwind CSS and Vite
+This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-<a href='https://github.com/webeetle/vite-react-app/generate'><img src='https://img.shields.io/badge/-Using this repo as Template-informational?style=for-the-badge&color=2867B2' /></a>
+## Recommended IDE Setup
 
-</div>
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
-## Getting Started (dev mode)
+## Type Support For `.vue` Imports in TS
 
-- Cloning this repo
-- `npm i`
-- `npm run dev`
-
-## Make production build
-
-- `npm run build`
-- `npm run serve`
-
-## Requirement
-
-- Node > v10
-- NPM
-
-## Under the hood
-
-- Vite
-- React
-- Tailwind CSS
-- PostCSS
-- CSS Modules
-
-### Pull Requests?
-
-We love them!
-
-### Comments?
-
-Let's hear them! (The nice ones please!)
-
-### Who we are?
-
-In case you're interested we are <a href='https://webeetle.com/'>@webeetle</a>
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
