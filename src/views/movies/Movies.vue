@@ -6,7 +6,7 @@
        <div class="flex justify-center">
            <div>
                 <input v-model="apiKey" class="mr-5 p-2 rounded-sm w-72" type="text" placeholder="API key"/>
-                <button class="mx-auto my-10 p-2 rounded-sm bg-sky-400 hover:bg-sky-200 focus:bg-sky-200" type="submit" @click="getMovies">Clickme</button>
+                <button class="mx-auto my-10 p-2 rounded-sm bg-sky-400 hover:bg-sky-200 focus:bg-sky-200" type="submit" @click="getMovies">Hämta filmer</button>
            </div>
        </div>
        <div class="grid grid-cols-5 flex-grow pb-40">
